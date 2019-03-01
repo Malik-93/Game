@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const CannonBall = (props) => {
   const ballStyle = {
-    fill: '#777',
+    fill: 'red',
     stroke: '#444',
     strokeWidth: '2px',
   };

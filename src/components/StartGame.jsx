@@ -4,12 +4,12 @@ import { gameWidth } from '../utils/constants';
 
 const StartGame = (props) => {
   const button = {
-    x: gameWidth / -2, // half width
-    y: -280, // minus means up (above 0)
+    x: gameWidth / -2,
+    y: -280,
     width: gameWidth,
-    height: 200,
-    rx: 10, // border radius
-    ry: 10, // border radius
+    height: -200,
+    rx: 10, 
+    ry: 10, 
     style: {
       fill: 'transparent',
       cursor: 'pointer',
@@ -18,11 +18,11 @@ const StartGame = (props) => {
   };
 
   const text = {
-    textAnchor: 'middle', // center
-    x: 0, // center relative to X axis
-    y: -150, // 150 up
+    textAnchor: 'middle',
+    x: 0,
+    y: -350,
     style: {
-      fontFamily: '"Joti One", cursive',
+      fontFamily: 'cursive',
       fontSize: 60,
       fill: '#e3e3e3',
       cursor: 'pointer',
@@ -33,7 +33,7 @@ const StartGame = (props) => {
     <g filter="url(#shadow)">
       <rect {...button} />
       <text {...text}>
-        Tap To Start!
+        Tap To Play!
       </text>
     </g>
   );

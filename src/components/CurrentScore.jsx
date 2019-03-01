@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 
 const CurrentScore = (props) => {
   const scoreStyle = {
-    fontFamily: '"Joti One", cursive',
+    fontFamily: 'san-sarif',
     fontSize: 80,
-    fill: '#d6d33e',
+    fill: 'white',
   };
 
   return (
     <g filter="url(#shadow)">
-      <text style={scoreStyle} x="300" y="80">
-        {props.score}
+      <text style={scoreStyle} x="500" y="55">
+       Score: {props.score}
       </text>
     </g>
   );
